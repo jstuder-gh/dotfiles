@@ -38,10 +38,6 @@ nnoremap <leader><space> :nohlsearch<CR>
 " Yank full line mapping
 noremap Y y$
 
-" mapping copy/paste to system clipboard
-nnoremap <leader>p "+p
-vnoremap <leader>y "+y
-
 " toggle relative numbers with leader+n
 function! RelativeNumToggle()
 	if(&relativenumber)
@@ -49,5 +45,5 @@ function! RelativeNumToggle()
 	else
 		set relativenumber
 	endif
-endfunc
+endfunction
 nnoremap <leader>n :call RelativeNumToggle()<CR>

@@ -1,9 +1,10 @@
 
 " Source common settings
-let s:common_dir = expand('<sfile>:p:h:h')
-let s:vim_dir    = s:common_dir . '/vim'
+let s:common_script_dir = expand('<sfile>:p:h:h')
+let g:vim_script_dir    = s:common_script_dir . '/vim'
 
-exec 'source ' . s:common_dir . '/common.vim'
+exec 'source ' . s:common_script_dir . '/common.vim'
 
-exec 'source ' . s:vim_dir . '/plugins.vim'
-exec 'source ' . s:vim_dir . '/settings.vim'
+exec 'source ' . g:vim_script_dir . '/platform.vim'
+exec 'source ' . g:vim_script_dir . '/plugins.vim'
+exec 'source ' . g:vim_script_dir . '/settings.vim'

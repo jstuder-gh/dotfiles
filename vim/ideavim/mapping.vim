@@ -2,6 +2,11 @@
 " Actions available in IdeaVim can be viewed with ":actionlist"
 " and searched with ":actionlist <TERM>"
 
+" mapping copy/paste to system clipboard
+" NOTE: IdeaVim recognizes the plus (+) unnamed register as system clipboard just like standard Vim impls
+nnoremap <leader>p "+p
+vnoremap <leader>y "+y
+
 nmap \b <Action>(ToggleLineBreakpoint)
 
 nmap <leader>e <Action>(GotoNextError)
