@@ -11,7 +11,8 @@ For Vim this is typically `~/.vimrc`
 For Neovim, this is typically `~/.config/nvim/init.vim`
 
 ```vim
-let $VIM_CONF_SRC_DIR = $HOME . '<PATH_TO_ROOT_OF_REPO>/vim'
+" Assuming env var set in .bashrc
+let $VIM_CONF_SRC_DIR = $JRS_DOTFILES_CONFIG_PATH . '/vim'
 source ${VIM_CONF_SRC_DIR}/vim/init.vim
 ```
 

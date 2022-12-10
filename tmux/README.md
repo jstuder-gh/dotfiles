@@ -7,6 +7,7 @@ Configuration files for Terminal Multiplexer (TMUX)
 Source the main file from the default TMUX configuration (typically ~/.tmux.conf)
 
 ```tmux
-TMUX_CONF_SRC_DIR="<PATH_TO_ROOT_OF_REPO>/tmux"
+# Assuming env var set in .bashrc
+TMUX_CONF_SRC_DIR="${JRS_DOTFILES_CONFIG_PATH}/tmux"
 source-file ${TMUX_CONF_SRC_DIR}/tmux.conf
 ```

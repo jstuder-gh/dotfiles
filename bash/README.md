@@ -4,8 +4,9 @@ Configuration files for the Bash shell.
 
 ## Setting up
 
-Source the main file from the default Bash configuration (typically ~/.bashrc)
+Source the main file from the default Bash configuration (typically ~/.bashrc).
 
 ```bash
-source <PATH_TO_ROOT_OF_REPO>/bash/bashrc
+export JRS_DOTFILES_CONFIG_PATH="<PATH_TO_ROOT_OF_REPO>"
+source "${JRS_DOTFILES_CONFIG_PATH}/bash/bashrc"
 ```
