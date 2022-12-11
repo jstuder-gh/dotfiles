@@ -12,7 +12,12 @@ Plug 'tomasr/molokai'
 
 "
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'dbakker/vim-paragraph-motion'
+Plug 'chrisbra/matchit'
 
 Plug 'christoomey/vim-tmux-navigator'
 
