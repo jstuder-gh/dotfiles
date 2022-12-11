@@ -1,14 +1,12 @@
 "
-
 let s:powershell = 'powershell.exe'
 
-let s:clip  = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+let s:clip  = '/mnt/c/Windows/System32/clip.exe'
 let s:paste = s:powershell . ' -Command Get-Clipboard'
 
 " WSL yank support
 "
 " Derived from below, but modified so that no all yanks are put in clipboard
-" Arbitrary register 'q' is used as buffer, which could lead to conflict
 "
 " https://www.reddit.com/r/bashonubuntuonwindows/comments/be2q3l/how_do_i_copy_whole_text_from_vim_to_clipboard_at/#t1_el2vx7u
 "
@@ -25,10 +23,8 @@ let s:paste = s:powershell . ' -Command Get-Clipboard'
 "
 if executable(s:clip) && executable(s:powershell)
 	function! DoClipboard()
-		if v:event['operator'] ==# 'y' && v:event['regname'] ==# 'q'
-			call system(s:clip, @q)
-			echo "Copied to clipboard"
-		endif
+		let l:selection = GetVisualSelection()
+		call system(s:clip, l:selection)
 	endfunction
 
 	function! DoPasteClipboard()
@@ -36,13 +32,8 @@ if executable(s:clip) && executable(s:powershell)
 		execute 'normal! i' . l:clip
 	endfunction
 
-	augroup WSLYank
-		autocmd!
-		autocmd TextYankPost * call DoClipboard()
-	augroup END
-
 	nnoremap <silent> <leader>p :call DoPasteClipboard()<CR>
-	vnoremap <leader>y "qy
+	vnoremap <silent> <leader>y :call DoClipboard()<CR>
 endif
 
 
