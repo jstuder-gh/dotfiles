@@ -6,6 +6,9 @@
 " Buffer bindings
 nnoremap <Space>bd :bd<CR>
 
+" Code bindings
+nnoremap <Space>cg :action Generate<CR>
+
 " File bindings
 nnoremap <Space>ff :action GotoFile<CR>
 nnoremap <Space>fr :action RecentFiles<CR>
