@@ -1,0 +1,9 @@
+
+[user]
+    name = Jeremy Studer
+
+[init]
+    defaultBranch = main
+
+[alias]
+    current = rev-parse --abbrev-ref HEAD
