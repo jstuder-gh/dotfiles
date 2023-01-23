@@ -54,10 +54,12 @@ set lazyredraw
 " use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 
-" enable folding
-set foldenable
-set foldmethod=syntax
-set foldlevelstart=20
+" enable folding (if not in vimdiff)
+if !&diff
+	set foldenable
+	set foldmethod=syntax
+	set foldlevelstart=20
+endif
 
 " visually indicate given column
 setlocal colorcolumn=100
