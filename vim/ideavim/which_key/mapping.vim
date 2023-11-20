@@ -8,6 +8,7 @@ nnoremap <Space>bd :bd<CR>
 
 " Code bindings
 nnoremap <Space>cg :action Generate<CR>
+nnoremap <Space>cr :action ReformatCode<CR>
 
 " File bindings
 nnoremap <Space>ff :action GotoFile<CR>
