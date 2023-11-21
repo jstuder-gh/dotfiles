@@ -39,3 +39,7 @@ nnoremap <Space>mp :action TogglePresentationMode<CR>
 
 " Refactor
 nnoremap <Space>rr :action RenameElement<CR>
+
+" Window Commands
+nnoremap <Space>wh :action HideAllWindows<CR>
+nnoremap <Space>ws :action ActivateStructureToolWindow<CR>
