@@ -10,6 +10,13 @@ nnoremap <Space>bd :bd<CR>
 nnoremap <Space>cg :action Generate<CR>
 nnoremap <Space>cr :action ReformatCode<CR>
 
+" Debugging bindings
+nnoremap <Space>dr :action Resume<CR>
+nnoremap <Space>dt :action RunToCursor<CR>
+
+nnoremap <Space>de :action EvaluateExpression<CR>
+vnoremap <Space>de :action EvaluateExpression<CR>
+
 " File bindings
 nnoremap <Space>ff :action GotoFile<CR>
 nnoremap <Space>fr :action RecentFiles<CR>
