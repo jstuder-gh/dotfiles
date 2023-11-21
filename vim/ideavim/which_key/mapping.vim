@@ -43,3 +43,7 @@ nnoremap <Space>rr :action RenameElement<CR>
 " Window Commands
 nnoremap <Space>wh :action HideAllWindows<CR>
 nnoremap <Space>ws :action ActivateStructureToolWindow<CR>
+
+" Git
+nnoremap <Space>gb :action Git.Branches<CR>
+nnoremap <Space>gc :action Git.CompareWithBranch<CR>
