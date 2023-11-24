@@ -30,9 +30,6 @@ nnoremap <Space>nr :NERDTreeRefreshRoot<CR>
 "
 nnoremap <Space>sf :action FindUsages<CR>
 
-" Window
-nnoremap <Space>wh :action HideActiveWindow<CR>
-
 " Mode change
 nnoremap <Space>mz :action ToggleZenMode<CR>
 nnoremap <Space>mp :action TogglePresentationMode<CR>
@@ -41,8 +38,9 @@ nnoremap <Space>mp :action TogglePresentationMode<CR>
 nnoremap <Space>rr :action RenameElement<CR>
 
 " Window Commands
-nnoremap <Space>wh :action HideAllWindows<CR>
-nnoremap <Space>ws :action ActivateStructureToolWindow<CR>
+nnoremap <Space>wha :action HideAllWindows<CR>
+nnoremap <Space>whs :action HideSideWindows<CR>
+nnoremap <Space>wss :action ActivateStructureToolWindow<CR>
 
 " Git
 " Annotate aka 'Git Blame'
