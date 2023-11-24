@@ -45,5 +45,9 @@ nnoremap <Space>wh :action HideAllWindows<CR>
 nnoremap <Space>ws :action ActivateStructureToolWindow<CR>
 
 " Git
+" Annotate aka 'Git Blame'
+nnoremap <Space>ga :action Annotate<CR>
 nnoremap <Space>gb :action Git.Branches<CR>
-nnoremap <Space>gc :action Git.CompareWithBranch<CR>
+nnoremap <Space>gcb :action Git.CompareWithBranch<CR>
+nnoremap <Space>gct :action Git.CompareWithTag<CR>
+nnoremap <Space>gm :action Git.ContextMenu<CR>
