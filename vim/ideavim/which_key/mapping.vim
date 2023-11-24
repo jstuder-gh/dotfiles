@@ -42,10 +42,20 @@ nnoremap <Space>wha :action HideAllWindows<CR>
 nnoremap <Space>whs :action HideSideWindows<CR>
 nnoremap <Space>wss :action ActivateStructureToolWindow<CR>
 
-" Git
+" History
+nnoremap <Space>hh :action LocalHistory.ShowHistory<CR>
+vnoremap <Space>hh :action LocalHistory.ShowSelectionHistory<CR>
+nnoremap <Space>hp :action LocalHistory.PutLabel<CR>
+
+" Git / VCS Generic
 " Annotate aka 'Git Blame'
 nnoremap <Space>ga :action Annotate<CR>
 nnoremap <Space>gb :action Git.Branches<CR>
 nnoremap <Space>gcb :action Git.CompareWithBranch<CR>
 nnoremap <Space>gct :action Git.CompareWithTag<CR>
+
 nnoremap <Space>gm :action Git.ContextMenu<CR>
+vnoremap <Space>gm :action Git.ContextMenu<CR>
+
+nnoremap <Space>gh :action Vcs.ShowTabbedFileHistory<CR>
+vnoremap <Space>gh :action Vcs.ShowHistoryForBlock<CR>
