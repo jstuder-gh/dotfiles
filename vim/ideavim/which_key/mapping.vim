@@ -36,6 +36,7 @@ nnoremap <Space>mp :action TogglePresentationMode<CR>
 
 " Refactor
 nnoremap <Space>rr :action RenameElement<CR>
+nnoremap <Space>rd :action SafeDelete<CR>
 
 " Window Commands
 nnoremap <Space>wha :action HideAllWindows<CR>
