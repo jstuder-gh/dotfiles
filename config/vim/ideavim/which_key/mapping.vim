@@ -7,6 +7,7 @@
 nnoremap <Space>bd :bd<CR>
 
 " Code bindings
+nnoremap <Space>ch :action ShowHoverInfo<CR>
 nnoremap <Space>cg :action Generate<CR>
 nnoremap <Space>cr :action ReformatCode<CR>
 
