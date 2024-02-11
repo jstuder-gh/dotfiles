@@ -9,8 +9,8 @@ vnoremap <leader>y "+y
 
 nmap \b <Action>(ToggleLineBreakpoint)
 
-nmap [e <Action>(GotoPreviousError)
-nmap ]e <Action>(GotoNextError)
+nmap [d <Action>(GotoPreviousError)
+nmap ]d <Action>(GotoNextError)
 
 nmap <C-h> <Action>(PrevSplitter)
 nmap <C-l> <Action>(NextSplitter)
