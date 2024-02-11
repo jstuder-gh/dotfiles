@@ -25,6 +25,17 @@ Plug 'mbbill/undotree'
 
 Plug 'liuchengxu/vim-which-key'
 
+" Git functionality
+Plug 'tpope/vim-fugitive'
+
+" Vim signify
+" Adds Git gutter
+if has('nvim') || has('patch-8.0.902')
+  Plug 'mhinz/vim-signify'
+else
+  Plug 'mhinz/vim-signify', { 'tag': 'legacy' }
+endif
+
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
@@ -40,3 +51,7 @@ nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
 " Undotree
 "
 nnoremap <space>ut :UndotreeToggle<CR>
+
+" Vim Fugitive (Git)
+"
+noremap <space>ga :Git blame<CR>
