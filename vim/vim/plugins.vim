@@ -21,8 +21,16 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'dbakker/vim-paragraph-motion'
 Plug 'chrisbra/matchit'
 
+Plug 'liuchengxu/vim-which-key'
+
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
 colorscheme molokai
+
+" Plugin-specific settings
+"
+" Which Key
+nnoremap <silent> <space> :WhichKey '<Space>'<CR>
+nnoremap <silent> <leader> :WhichKey '<leader>'<CR>

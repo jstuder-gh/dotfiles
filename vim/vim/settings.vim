@@ -12,6 +12,12 @@ set autoindent
 " Enable syntax highlighting
 syntax on
 
+" quickly timeout on keycodes
+" time out less quickly on mappings
+" NOTE: timeout required for WhichKey
+set ttimeout ttimeoutlen=200
+set timeout timeoutlen=500
+
 " Set default file encoding to utf8
 set encoding=utf-8
 
