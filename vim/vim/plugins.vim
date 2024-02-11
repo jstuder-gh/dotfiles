@@ -21,6 +21,8 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'dbakker/vim-paragraph-motion'
 Plug 'chrisbra/matchit'
 
+Plug 'mbbill/undotree'
+
 Plug 'liuchengxu/vim-which-key'
 
 Plug 'christoomey/vim-tmux-navigator'
@@ -34,3 +36,7 @@ colorscheme molokai
 " Which Key
 nnoremap <silent> <space> :WhichKey '<Space>'<CR>
 nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
+
+" Undotree
+"
+nnoremap <space>ut :UndotreeToggle<CR>
