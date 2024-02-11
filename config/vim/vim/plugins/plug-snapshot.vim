@@ -20,3 +20,4 @@ silent! let g:plugs['vim-unimpaired'].commit = '6d44a6dc2ec34607c41ec78acf816572
 silent! let g:plugs['vim-which-key'].commit = '470cd19ce11b616e0640f2b38fb845c42b31a106'
 
 PlugUpdate!
+
