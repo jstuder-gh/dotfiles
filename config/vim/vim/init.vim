@@ -10,3 +10,5 @@ exec 'source ' . g:vim_script_dir . '/plugins.vim'
 exec 'source ' . g:vim_script_dir . '/settings.vim'
 
 exec 'source ' . g:vim_script_dir . '/utility.vim'
+
+exec 'source ' . g:vim_script_dir . '/which_key/mapping.vim'

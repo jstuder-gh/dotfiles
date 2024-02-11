@@ -48,10 +48,3 @@ colorscheme molokai
 nnoremap <silent> <space> :WhichKey '<Space>'<CR>
 nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
 
-" Undotree
-"
-nnoremap <space>ut :UndotreeToggle<CR>
-
-" Vim Fugitive (Git)
-"
-noremap <space>ga :Git blame<CR>
