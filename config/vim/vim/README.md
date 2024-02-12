@@ -12,7 +12,7 @@ For Neovim, this is typically `~/.config/nvim/init.vim`
 
 ```vim
 " Assuming env var set in .bashrc
-let $VIM_CONF_SRC_DIR = $JRS_DOTFILES_CONFIG_PATH . '/vim'
+let $VIM_CONF_SRC_DIR = $JRS_DOTFILES_CONFIG_PATH . '/config/vim'
 source ${VIM_CONF_SRC_DIR}/vim/init.vim
 ```
 

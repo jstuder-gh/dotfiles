@@ -20,7 +20,7 @@ derive relative paths). This leads to some redundancy in the root file from whic
 sourced.
 
 ```vim
-let vim_conf_dir     = '<PATH_TO_ROOT_OF_REPO_>/vim'
+let vim_conf_dir     = '<PATH_TO_ROOT_OF_REPO_>/config/vim'
 let ideavim_conf_dir = vim_conf_dir . '/ideavim'
 
 source <PATH_TO_ROOT_OF_REPO>/vim/ideavim/init.vim
