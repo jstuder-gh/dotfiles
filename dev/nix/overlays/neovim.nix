@@ -43,6 +43,12 @@ final: prev:
       nmap <silent> <Space>jr <Plug>(coc-references)
       nmap <silent> <Space>jl <Plug>(coc-openlink)
 
+      " Symbols in workspace
+      nmap <silent> <Space>jss :CocList --interactive symbols<CR>
+      " outline: Symbols in current buffer
+      nmap <silent> <Space>jso :CocList outline<CR>
+      nmap <silent> <Space>jsd :CocList diagnostics<CR>
+
       nmap <silent> <C-s> <Plug>(coc-range-select)
       xmap <silent> <C-s> <Plug>(coc-range-select)
 
