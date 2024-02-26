@@ -49,6 +49,9 @@
             pkgs.nodejs_20
             pkgs.kubectl
 
+            pkgs.fzf
+            pkgs.ripgrep
+
             pkgs.nixpkgs-fmt
 
             # Nix LSP
