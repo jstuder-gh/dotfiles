@@ -12,6 +12,10 @@ nnoremap <Space>nt :NERDTreeToggle<CR>
 nnoremap <Space>nf :NERDTreeFind<CR>
 nnoremap <Space>nr :NERDTreeRefreshRoot<CR>
 
+" Files (Fuzzy Search)
+nnoremap <Space>ff :Files<CR>
+nnoremap <Space>fb :Buffers<CR>
+
 " Git / VCS
 " Annotate aka 'Git Blame'
 " Note: uses Vim-Fugitive (Git) plugin

@@ -28,6 +28,10 @@ Plug 'liuchengxu/vim-which-key'
 " Git functionality
 Plug 'tpope/vim-fugitive'
 
+" Fuzzy-finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " Vim signify
 " Adds Git gutter
 if has('nvim') || has('patch-8.0.902')
