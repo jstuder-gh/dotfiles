@@ -40,6 +40,10 @@ else
   Plug 'mhinz/vim-signify', { 'tag': 'legacy' }
 endif
 
+" Syntax Highlighting
+Plug 'jvirtanen/vim-hcl'
+
+" Tmux + Shell interop
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
